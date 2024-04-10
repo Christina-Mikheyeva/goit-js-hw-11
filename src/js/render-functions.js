@@ -5,15 +5,15 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 
 const loader = document.querySelector('.loader');
 
-function showLoader() {
+export function showLoader() {
   loader.classList.add('active');
 }
 
-function hideLoader() {
+export function hideLoader() {
   loader.classList.remove('active');
 }
 
-function createGalleryMarkup(images) {
+ export function createGalleryMarkup(images) {
   const galleryMarkup = images.map(image => `
     <div class="gallery-item">
       <a href="${image.largeImageURL}" class="lightbox">
@@ -42,12 +42,10 @@ function createGalleryMarkup(images) {
   lightbox.refresh();
 }
 
-function showMessage(message) {
+export function showMessage(message) {
   iziToast.show({
     title: 'Пошук зображень',
     message,
     position: 'topRight',
   });
 }
-
-export { showLoader, hideLoader, createGalleryMarkup, showMessage };

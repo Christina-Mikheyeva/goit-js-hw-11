@@ -1,4 +1,5 @@
-import { getImages, showLoader, hideLoader, createGalleryMarkup, showMessage } from "./js/render-functions";
+import { showLoader, hideLoader, createGalleryMarkup, showMessage } from "./js/render-functions.js";
+import { getImages } from "./js/pixabay-api.js";
 
 const searchForm = document.querySelector('.search-form');
 const searchInput = document.querySelector('.search-input');
