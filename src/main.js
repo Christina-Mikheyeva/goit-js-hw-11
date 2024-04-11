@@ -13,8 +13,8 @@ searchForm.addEventListener('submit', async (event) => {
     return;
   }
 
-  showLoader();
-
+    showLoader();
+    
   const images = await getImages(keyword);
 
   hideLoader();
