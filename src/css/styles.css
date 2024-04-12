@@ -38,4 +38,5 @@ img {
 
 .gallery-item {
   flex-basis: calc((100% - (24px*2))/3);
+  border: 1px solid rgba(128, 128, 128, 1);
 }

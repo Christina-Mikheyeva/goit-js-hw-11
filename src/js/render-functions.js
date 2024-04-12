@@ -21,16 +21,20 @@ export function hideLoader() {
       </a>
       <div class="info">
         <p>
-          <i class="fa fa-heart"></i> ${image.likes}
+        <b>Likes</b>
+         ${image.likes}
         </p>
         <p>
-          <i class="fa fa-eye"></i> ${image.views}
+        <b>Views</b>
+       ${image.views}
         </p>
         <p>
-          <i class="fa fa-comment"></i> ${image.comments}
+        <b>Comments</b>
+        ${image.comments}
         </p>
         <p>
-          <i class="fa fa-download"></i> ${image.downloads}
+        <b>Downloads</b>
+        ${image.downloads}
         </p>
       </div>
     </div>
